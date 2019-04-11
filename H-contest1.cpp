@@ -32,7 +32,7 @@ int main()
 	while(1)
 	{
 		cin>>n>>k>>s;
-		int dem=0;
+		int dem=0;//đếm phải nằm trong vòng while nếu không sẽ in sai kết quả
 		if(n==0&&k==0&&s==0)break;
 		else{
 			OK=1;
