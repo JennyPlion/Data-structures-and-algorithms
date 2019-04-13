@@ -4,7 +4,7 @@ int n,k,s,a[100],OK=1;
 int Next()
 {
 	int i=k;
-	while(i>0&&a[i]==n-k+i)i--;
+	while(i>0&&a[i]>=n-k+i)i--;//Phải lớn hơn hoặc bằng chứ ko phải bằng vì có bộ test n=3 và k=4, thì k>n nên nếu để dấu bằng sẽ ko in ra gì cả.
 	if(i>0)
 	{
 		a[i]=a[i]+1;
