@@ -50,7 +50,7 @@ void createTree(Tree &root)
 }
 
 
-void NLR(Tree root)
+/*void NLR(Tree root)
 {
 	if(root)
 	{
@@ -59,7 +59,7 @@ void NLR(Tree root)
 		NLR(root->right);
 	}
 }
-
+*/
 void LeafNode(Tree t)
 {
 	if(t)
@@ -83,7 +83,7 @@ int main()
 		Tree root;
 	Init(root);
 	createTree(root);
-NLR(root);
+//NLR(root);
 LeafNode(root);
 	cout<<endl;
 	}
