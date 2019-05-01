@@ -55,11 +55,11 @@ void LRN(Tree root)
 	{
 		LRN(root->left);
 		LRN(root->right);
-		//cout<<root->data<<" ";
+		cout<<root->data<<" ";
 	}
 }
 
-int Sum(Tree root)
+/*int Sum(Tree root)
 {
 	if(root==NULL)return 0;
 	if(root->left == NULL && root->right == NULL)return root->data;
@@ -68,6 +68,7 @@ int Sum(Tree root)
 		return Sum(root->left)+Sum(root->right);
 	}
 }
+*/
 int main()
 {
 	Tree root;
@@ -78,6 +79,7 @@ int main()
 		Init(root);
 		createTree(root);
 		LRN(root);
-		cout<<Sum(root)<<endl;
+		//cout<<Sum(root)<<endl;
+		cout<<endl;
 	}
 }
